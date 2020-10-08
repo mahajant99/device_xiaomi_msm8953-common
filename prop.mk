@@ -45,6 +45,23 @@ qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
+# Bpf
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.kernel.ebpf.supported=1
+
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+camera.display.lmax=1280x720 \
+camera.display.umax=1920x1080 \
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
+camera.lowpower.record.enable=1 \
+media.camera.ts.monotonic=1 \
+persist.camera.gyro.disable=0 \
+persist.camera.isp.clock.optmz=0 \
+persist.camera.stats.test=5 \
+persist.vendor.qti.telephony.vt_cam_interface=1 \
+vidc.enc.dcvs.extra-buff-count=2
+
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.charger.disable_init_blank=true \
