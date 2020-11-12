@@ -49,6 +49,12 @@ ro.qualcomm.bt.hci_transport=smd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.kernel.ebpf.supported=1
 
+# Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.sf.blurs_are_expensive=1 \
+ro.surface_flinger.supports_background_blur=1 \
+debug.sf.disable_backpressure=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
