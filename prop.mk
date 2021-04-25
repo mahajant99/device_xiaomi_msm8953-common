@@ -71,10 +71,6 @@ persist.vendor.dpm.loglevel=0 \
 persist.vendor.dpm.nsrm.bkg.evt=3955 \
 persist.vendor.dpmhalservice.enable=1
 
-# Coresight
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.debug.coresight.config=stm-events
-
 # Dalvik dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat64.enabled=true
