@@ -143,7 +143,8 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-    libqdMetaData.system \
+    libqdMetaData \
+    libqdMetaData.vendor \
     libgenlock \
     libtinyxml
 
@@ -408,5 +409,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libstagefright_enc_common
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
