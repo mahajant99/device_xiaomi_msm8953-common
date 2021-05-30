@@ -158,14 +158,14 @@
         <fqname>@1.2::ISap/slot1</fqname>
         <fqname>@1.2::ISap/slot2</fqname>
     </hal>
-   <hal format="hidl">
-       <name>android.hardware.radio.config</name>
-       <transport>hwbinder</transport>
-       <version>1.1</version>
-       <interface>
-           <name>IRadioConfig</name>
-           <instance>default</instance>
-       </interface>
+    <hal format="hidl">
+        <name>android.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -229,15 +229,6 @@
             <name>IImsCmService</name>
             <instance>qti.ims.connectionmanagerservice</instance>
         </interface>
-    </hal>
-    <hal format="hidl">
-       <name>vendor.qti.ims.factory</name>
-       <transport>hwbinder</transport>
-       <version>1.0</version>
-       <interface>
-         <name>IImsFactory</name>
-         <instance>default</instance>
-       </interface>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.uceservice</name>
@@ -501,6 +492,15 @@
         <interface>
             <name>IService</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.ims.factory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+          <name>IImsFactory</name>
+          <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
