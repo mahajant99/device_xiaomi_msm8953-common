@@ -480,9 +480,9 @@ vendor/lib64/libOmxEvrcDec.so|67da9d405b33c9a1058ee2bcb12ea489f37d5961
 vendor/lib64/libOmxQcelp13Dec.so|842f2285c1eb76827a3b8bd0b574aee86ad1d1bd
 vendor/lib64/libOmxWmaDec.so|7e5dab018bbab16566315dcc61682a196a25f0ba
 
-# Modem - from LA.UM.8.6.2.r1-08400-89xx.0
-vendor/lib/libwms.so|577d673e8eb38ccf33bd2d70115ad78b695e6ac1
-vendor/lib64/libwms.so|522c5b67917decedf38799bf02c1769c34344eee
+# Modem - from nokia
+vendor/lib/libwms.so|ee2a4200c086740c99a67a2f66511845a5f5d1b0
+vendor/lib64/libwms.so|3ac74491eadad43b6e9fd661b47d3bb7fdab91fb
 
 # Perf - from LA.UM.9.6.2.r1-03600-89xx.0
 system_ext/etc/perf/wlc_model.tflite|83cf4df067bc14c78f31943f32bcaf6f32419125
