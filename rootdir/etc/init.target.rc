@@ -36,11 +36,9 @@ on fs
     mount_all /vendor/etc/fstab.qcom
 
     chown root system /mnt/vendor/persist
-    chmod 0771 /mnt/vendor/persist
-    restorecon_recursive /mnt/vendor/persist
-    mkdir /mnt/vendor/persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
+    restorecon_recursive /mnt/vendor/persist
 
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
@@ -232,11 +230,6 @@ on boot
     # DT2W Node
     chown system system /proc/touchpanel/wakeup_gesture
     chmod 0660 /proc/touchpanel/wakeup_gesture
-
-on property:sys.boot_completed=1
-    # Restrict permissions to socket file
-    # to hide Magisk & co.
-    chmod 440 /proc/net/unix
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
